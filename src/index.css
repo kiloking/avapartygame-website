@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Arcade";
+  src: url("/fonts/Arcade.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 如果你想要直接將這個字體套用到整個應用程式 */
+body {
+  font-family: "Arcade", sans-serif;
+}
