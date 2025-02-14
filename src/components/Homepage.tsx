@@ -45,11 +45,11 @@ function Homepage() {
         <div>參加獎: {(totalAmount * 0.05).toLocaleString()}</div>
       </div>
 
-      <div className="w-[43%] mx-auto h-full relative flex flex-col justify-end items-center ">
-        <div className="w-full flex flex-col justify-start   h-[100%]">
-          <div className="  w-[85%] mx-auto mt-[2%] relative">
-            <img src="./images/img01.png" alt="" className="w-full" />
-            <div className=" absolute text-[9vw] top-[4%] right-[2%] text-right text-black">
+      <div className="w-[800px] mx-auto h-full relative flex flex-col justify-end items-center ">
+        <div className="w-full flex flex-col justify-center items-center   h-[100%]">
+          <div className="  h-[24%] mx-auto mt-[2%] relative">
+            <img src="./images/img01.png" alt="" className="h-full" />
+            <div className=" absolute text-[130pt] top-[4%] right-[2%] text-right text-black">
               {totalAmount.toLocaleString()}
             </div>
 
@@ -76,31 +76,47 @@ function Homepage() {
               <img src="./images/coin02.png" alt="1" className="w-full" />
             </motion.div>
           </div>
-          <div className="  w-[94%] mx-auto mt-[2%] relative bg">
-            <img src="./images/img02.png" alt="" className="w-full" />
-            <div className=" absolute text-[5.8vw] top-[10%] right-[2%] text-right text-white/80 flex flex-col justify-between gap-2 leading-[6vw]">
+          <div className="   h-[56%] mx-auto mt-[2%] relative bg">
+            <img src="./images/img02.png" alt="" className="h-full" />
+            <div className=" absolute text-[97pt] top-[10%] right-[3%] text-right text-white/80 flex flex-col justify-between gap-2 leading-[87pt]">
               <div>{(totalAmount * 0.5).toLocaleString()}</div>
               <div>{(totalAmount * 0.2).toLocaleString()}</div>
               <div>{(totalAmount * 0.1).toLocaleString()}</div>
             </div>
-            <div className=" absolute text-[2.7vw] bottom-[0%] right-[2%] text-right text-white/80 flex flex-col justify-between  leading-[3.8vw]">
-              <div className="flex -ml-[44%] gap-[19%]  justify-start ">
+            <div className=" absolute text-[40pt] bottom-[0%] right-[2%] text-right text-white/80 flex flex-col justify-between  leading-[54pt]">
+              <div className="flex -ml-[60%] gap-[25%]  justify-start ">
                 <div>{(totalAmount * 0.05).toLocaleString()}</div>
                 <div>{(totalAmount * 0.05).toLocaleString()}</div>
               </div>
-              <div className="flex -ml-[72%] gap-[15%] ustify-start">
+              <div className="flex -ml-[93%] gap-[20%] ustify-start">
                 <div>{(totalAmount * 0.05).toLocaleString()}</div>
                 <div>{(totalAmount * 0.05).toLocaleString()}</div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-[100%] mx-auto flex flex-col justify-start relative h-[20%]">
-          <div className=" absolute w-[110%] top-[20%] left-1/2 -translate-x-1/2">
-            <img src="./images/cloud.png" alt="1" />
-          </div>
-          <div className=" absolute w-[76%] -top-[15%] left-1/2 -translate-x-1/2">
-            <img src="./images/title01.png" alt="1" />
+          <div className=" mx-auto flex flex-col justify-start relative h-[20%] w-full ">
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className=" absolute w-[110%] top-[20%] left-1/2 -translate-x-1/2"
+            >
+              <img src="./images/cloud.png" alt="1" />
+            </motion.div>
+            <motion.div
+              initial={{ y: 30 }}
+              animate={{ y: 0 }}
+              transition={{
+                duration: 1,
+                ease: "easeInOut",
+              }}
+              className=" absolute w-[74%] bottom-[1%] left-1/2 -translate-x-1/2"
+            >
+              <img src="./images/title01.png" alt="1" />
+            </motion.div>
           </div>
         </div>
 
