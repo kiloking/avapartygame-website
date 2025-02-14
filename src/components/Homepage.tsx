@@ -49,7 +49,7 @@ function Homepage() {
         <div className="w-full flex flex-col justify-center items-center   h-[100%]">
           <div className="  h-[24%] mx-auto mt-[2%] relative">
             <img src="./images/img01.png" alt="" className="h-full" />
-            <div className=" absolute text-[130pt] top-[4%] right-[2%] text-right text-black">
+            <div className=" absolute text-[120pt] top-[4%] right-[2%] text-right text-black">
               {totalAmount.toLocaleString()}
             </div>
 
@@ -78,17 +78,17 @@ function Homepage() {
           </div>
           <div className="   h-[56%] mx-auto mt-[2%] relative bg">
             <img src="./images/img02.png" alt="" className="h-full" />
-            <div className=" absolute text-[97pt] top-[10%] right-[3%] text-right text-white/80 flex flex-col justify-between gap-2 leading-[87pt]">
+            <div className=" absolute text-[80pt] top-[10%] right-[3%] text-right text-white/80 flex flex-col justify-between gap-2 leading-[80pt]">
               <div>{(totalAmount * 0.5).toLocaleString()}</div>
               <div>{(totalAmount * 0.2).toLocaleString()}</div>
               <div>{(totalAmount * 0.1).toLocaleString()}</div>
             </div>
-            <div className=" absolute text-[40pt] bottom-[0%] right-[2%] text-right text-white/80 flex flex-col justify-between  leading-[54pt]">
-              <div className="flex -ml-[60%] gap-[25%]  justify-start ">
+            <div className=" absolute text-[40pt] bottom-[0%] right-[2%] text-right text-white/80 flex flex-col justify-between  leading-[50pt]">
+              <div className="flex -ml-[50%] gap-[20%]  justify-start ">
                 <div>{(totalAmount * 0.05).toLocaleString()}</div>
                 <div>{(totalAmount * 0.05).toLocaleString()}</div>
               </div>
-              <div className="flex -ml-[93%] gap-[20%] ustify-start">
+              <div className="flex -ml-[80%] gap-[18%] ustify-start">
                 <div>{(totalAmount * 0.05).toLocaleString()}</div>
                 <div>{(totalAmount * 0.05).toLocaleString()}</div>
               </div>
